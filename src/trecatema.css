@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.header-stil{
+    background-color: #e53935 !important;
+    border-radius: 5px !important;
+    color: white !important;
+}
+
+.oboji{
+    background-color: #e53935 !important;
+    padding: 8px !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.naslov{
+    color: white !important;
+}
+
+.podnaslov{
+    font-size: 16px;
+}
+
+.ml-3{
+    margin-left: 10% !important;
+}
+
+.ml-5{
+    margin-left: 1% !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.rasiri{
+    width: 100% !important;
+    min-width: 100% !important;
+}
+
+button{
+    background-color: #e53935 !important;
+    color: white !important;
+}
+
+
+.ui.cards>.card{
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .naslov-res{
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .bezpaddinga {
+        padding: 0 0 !important;
+    }
+}
+
+.ui.card>.content>.header, .ui.cards>.card>.content>.header{
+    color: #e53935!important;
+}
+
+.ui.stackable.grid > .row > .column.wide.noPadding {
+    padding: 0 !important;
+}
+
+.react-datepicker__input-container {
+    width: 100%;
+}
+
+.ui.form .field:last-child, .ui.form .fields:last-child .field{
+    width: 100%;
+}
+
+.loader{
+    height: 500px;
+}
+
+/* Semantic UI has these classes, however they're only applicable to*/
+/* grids, containers, rows and columns.*/
+/* plus, there isn't any `mobile hidden`, `X hidden` class.*/
+/* this snippet is using the same class names and same approach*/
+/* plus a bit more but to all elements.*/
+/* see https://github.com/Semantic-Org/Semantic-UI/issues/1114*/
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    [class*="mobile hidden"],
+    [class*="tablet only"]:not(.mobile),
+    [class*="computer only"]:not(.mobile),
+    [class*="large screen only"]:not(.mobile),
+    [class*="widescreen only"]:not(.mobile),
+    [class*="or lower hidden"] {
+        display: none !important;
+    }
+}
+
+.text-center{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    [class*="mobile only"]:not(.tablet),
+    [class*="tablet hidden"],
+    [class*="computer only"]:not(.tablet),
+    [class*="large screen only"]:not(.tablet),
+    [class*="widescreen only"]:not(.tablet),
+    [class*="or lower hidden"]:not(.mobile) {
+        display: none !important;
+    }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    [class*="mobile only"]:not(.computer),
+    [class*="tablet only"]:not(.computer),
+    [class*="computer hidden"],
+    [class*="large screen only"]:not(.computer),
+    [class*="widescreen only"]:not(.computer),
+    [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+        display: none !important;
+    }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    [class*="mobile only"]:not([class*="large screen"]),
+    [class*="tablet only"]:not([class*="large screen"]),
+    [class*="computer only"]:not([class*="large screen"]),
+    [class*="large screen hidden"],
+    [class*="widescreen only"]:not([class*="large screen"]),
+    [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+        display: none !important;
+    }
+}
+
+/* Widescreen Monitor */
+@media only screen and (min-width: 1920px) {
+    [class*="mobile only"]:not([class*="widescreen"]),
+    [class*="tablet only"]:not([class*="widescreen"]),
+    [class*="computer only"]:not([class*="widescreen"]),
+    [class*="large screen only"]:not([class*="widescreen"]),
+    [class*="widescreen hidden"],
+    [class*="widescreen or lower hidden"] {
+        display: none !important;
+    }
+}
